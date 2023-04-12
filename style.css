@@ -10,7 +10,10 @@ body{
 
 .circle {
     background: red;
-    color: white;
+    color: lightgray;
+    padding: 5px 20px;
+    border-radius: 50%;
+    font-size: 65px;
 }
 
 .circle:hover {
