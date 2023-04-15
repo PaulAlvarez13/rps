@@ -1,11 +1,10 @@
     /* I found the text to speech code from the url and wrapped into a function: 
     https://dev.to/asaoluelijah/text-to-speech-in-3-lines-of-javascript-b8h
-    
+    */
     function say(myMessage){
         var msg = new SpeechSynthesisUtterance(myMessage);
         window.speechSynthesis.speak(msg);
     }
-    */
 
  /* This is a simplified version of the game.
 The Computer ALWAYS picks ROCK.  
@@ -21,6 +20,7 @@ function play(user) {
     if (user === 'scissors') {
         result = "lose";
     }
-    alert("Computer chose rock, you " + result + "!")
-    
+    var theMessage = "Computer chose rock, you " + result + "!"
+    alert(theMessage)
+    say(theMessage)
 }
